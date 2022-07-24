@@ -1,12 +1,13 @@
 {
   "name": "eshop-api",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "ecommerce architecture reference API",
   "main": "src/server.js",
   "scripts": {
     "test": "jest --detectOpenHandles",
     "test-watch": "jest --watch",
     "watch": "nodemon src/server.js",
+    "server": "npm run watch --prefix server",
     "start": "node src/server.js",
     "cluster": "pm2 start src/server.js -i max"
   },

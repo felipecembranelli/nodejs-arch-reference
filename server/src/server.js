@@ -8,7 +8,8 @@ const { mongoConnect } = require('./services/mongo');
 //const { loadLaunchData } = require('./models/launches.model');
 const { loadCatalogData } = require('./models/catalog.model');
 
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 8001;
+//const PORT = 8000;
 
 const server = http.createServer(app);
 
