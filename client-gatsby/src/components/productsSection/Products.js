@@ -3,7 +3,7 @@ import { Container, Row } from "reactstrap"
 import ProductCard from "../productCard/ProductCard"
 import styled from "styled-components"
 
-import { items } from "../../data";
+//import { items } from "../../data";
 import useCatalog from "../../hooks/useCatalog";
 
 export default function Products() {
@@ -27,7 +27,19 @@ export default function Products() {
     }
   `
 
-  const catalog = useCatalog();
+  console.log("calling dentro do component");
+
+  var response = useCatalog();
+
+  console.log(response);
+
+  var items = [];
+
+  //Object.keys(response).forEach(key => items.push({name: key, value: response[key]}))
+  for(var i in response)
+    items.push([i, response [i]]);
+  
+  console.log(items);
 
   return (
     <Container style={{ marginTop: "40px" }}>
@@ -44,7 +56,6 @@ export default function Products() {
           />
         ))}
       </Row>
-      teste{catalog}
     </Container>
   )
 }

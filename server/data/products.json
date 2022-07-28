@@ -1,0 +1,40 @@
+{
+    "items": [
+        {
+            "src": "../images/products/experience-3.jpeg",
+            "name": "Experience",
+            "id": 1,
+            "price": 3000,
+            "color": "",
+            "description": "",
+            "sizes": []
+        },
+        {
+            "src": "../images/products/experience-3.jpeg",
+            "name": "Experience",
+            "id": 1,
+            "price": 3000,
+            "color": "",
+            "description": "",
+            "sizes": []
+        },
+        {
+            "src": "../images/products/experience-3.jpeg",
+            "name": "Experience",
+            "id": 1,
+            "price": 3000,
+            "color": "",
+            "description": "",
+            "sizes": []
+        },
+        {
+            "src": "../images/products/experience-3.jpeg",
+            "name": "Experience",
+            "id": 1,
+            "price": 3000,
+            "color": "",
+            "description": "",
+            "sizes": []
+        }
+    ]
+}

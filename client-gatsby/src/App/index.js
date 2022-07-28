@@ -12,7 +12,14 @@ import Recommended from "../components/recommendationSector/Recommended"
 import Categories from "../components/categorySection/Categories"
 //import Web3Wrapper from "../components/web3Wrapper/web3Wrapper"
 
-const IndexPage = () => (
+//import useCatalog from "../hooks/useCatalog";
+
+const IndexPage = () => {
+
+  //console.log("calling novo");
+  //const catalog = useCatalog();
+
+  return (
   <Layout>
     <SEO />
     <HomeCarousel />
@@ -22,5 +29,6 @@ const IndexPage = () => (
     <Recommended />
   </Layout>
 )
+  };
 
 export default IndexPage

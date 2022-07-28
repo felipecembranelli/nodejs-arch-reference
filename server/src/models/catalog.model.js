@@ -3,9 +3,11 @@ const path = require('path');
 const { parse } = require('csv-parse');
 
 //const planets = require('./planets.mongo');
+//import { items } from "../../data";
+var data = require('../../data/products.json');
 const products = [];
 
-function loadCatalogData() {
+function loadCatalogData2() {
   return new Promise((resolve, reject) => {
     fs.createReadStream(path.join(__dirname, '..', '..', 'data', 'products_data.csv'))
       .pipe(parse({
@@ -29,12 +31,20 @@ function loadCatalogData() {
   });
 }
 
+async function loadCatalogData() {
+  // return await products.find({}, {
+  //   '_id': 0, '__v': 0,
+  // });
+
+  return data;
+}
+
 async function getAllProducts() {
   // return await products.find({}, {
   //   '_id': 0, '__v': 0,
   // });
 
-  return products;
+  return data;
 }
 
 async function saveProduct(product) {
