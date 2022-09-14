@@ -61,7 +61,7 @@ const AppLayout = props => {
 
   const planets = usePlanets();
 
-  const catalog = useCatalog();
+  //const catalog = useCatalog();
   
   return <div className={classes.content}>
     <Header onNav={animateFrame} />
@@ -99,7 +99,7 @@ const AppLayout = props => {
           </Switch>
           </div>
         )}
-        {catalog}
+        {/* {catalog} */}
       </Frame>
     </Centered>
     <Footer />
